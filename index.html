@@ -22,10 +22,10 @@
         <div class="nav-side">
             <nav>
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contacts</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contact</a>
             </nav>
             <div class="hamburger">
               <i class="fa-solid fa-bars"></i>
@@ -51,7 +51,206 @@
             <button>View My Works</button>
         </div> 
      </section>
+
+     <!-- About me -->
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-me">
+          <img src="./images/me2.png" alt="profile-2">
+          <div class="about-details">
+            <p>
+                I am a passionate Fullstack Developer with a strong interest in building modern, responsive, and user-friendly web applications. I enjoy turning ideas into real-life digital experiences that are both functional and visually appealing. Over time, I have been developing my skills in frontend and backend technologies, with a focus on continuous learning and improvement.
+            </p>
+            <p>
+                My background is in technology and problem-solving, and I am deeply motivated by the impact software can have in solving real-world problems. I enjoy working on projects that challenge me to think creatively and improve my technical abilities. Outside coding, I am interested in exploring new technologies, building personal projects, and contributing to collaborative development environments.
+            </p>
+            <p>
+                I am currently learning web development because I am passionate about creating solutions that are accessible, efficient, and impactful. My goal is to become a highly skilled software engineer capable of building scalable applications and contributing to innovative tech products. Every project I build brings me one step closer to that vision.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skils section -->
+      <section id="skills" class="skills">
+        <h3>My Skills</h3>
+        <div class="card-container">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <span>Javascript</span>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-thumbtack"></i>
+                <span>React</span>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <span>Git/Github</span>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-thumbtack"></i>
+                <span>Tailwind Css</span>
+            </div>
+        </div>
+      </section>
+
+      <!-- project section -->
+    <section id="projects" class="projects">
+              <h4>Recent Projects</h4>
+        <div class="projects-container">
+            <div class="project">
+                   <a 
+                   href="https://qucik-eat-react-project.vercel.app/" 
+                   target="_blank" 
+                   class="project-link">
     
+                <div class="image-wrapper">
+                    <img src="./images/quickeat-main.png" alt="project-1">
+                    <div class="github">
+                        <a href="https://github.com/franklin-oks/QucikEat-ReactProject" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <span class="category">E-Commerce</span>
+
+                    <p>
+                        This was my first project after learning Tailwind CSS and React. 
+                        While not fully polished, it represents the beginning of my frontend journey.
+                    </p>
+
+                    <span class="stack">React • Tailwind CSS</span>
+                </div>
+               </a>
+            </div>
+        
+            <div class="project">
+                   <a href="https://my-portfolio-htot.vercel.app" target="_blank" class="project-link">
+    
+                <div class="image-wrapper">
+                    <img src="./images/portfolio.png" alt="project-1">
+                    <div class="github">
+                        <a href="https://github.com/franklin-oks/myPortfolio" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <span class="category">Portfolio</span>
+                    <p>
+                    A clean, modern, and fully responsive portfolio website designed to showcase my skills, experience, and projects. Built with React and styled using Tailwind
+                    </p>
+                    <span class="stack">React • Tailwind CSS</span>
+                </div>
+               </a>
+            </div>
+        
+            <div class="project">
+                   <a href="https://nextflix-clone-3ovg.vercel.app/" target="_blank" class="project-link">
+    
+                <div class="image-wrapper">
+                    <img src="./images/netflix_1.png" alt="project-1">
+                    <div class="github">
+                        <a href="https://github.com/franklin-oks/nextflix_clone" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <span class="category">Netflix Clone</span>
+                    <p>
+                    A dynamic movie streaming website that fetches real-time data from the TMDB API to display trending and featured movies. This project helped me strengthen my understanding of API integration using the useEffect hook in React.
+                    </p>
+                    <span class="stack">React • Tailwind CSS</span>
+                </div>
+               </a>
+            </div>
+
+            <div class="project">
+                   <a href="https://e-commerce-next-js-mu-five.vercel.app/" target="_blank" class="project-link">
+    
+                <div class="image-wrapper">
+                    <img src="./images/search-page.png" alt="project-1">
+                    <div class="github">
+                        <a href="https://github.com/franklin-oks/E-commerceNext.Js" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <span class="category">E-Commerce</span>
+                    <p>
+                        This was my second project after learning Tailwind CSS and Nextjs. 
+                        integrated supabase as a backend to be fetching products
+                    </p>
+                    <span class="stack">Nextjs • Tailwind CSS</span>
+                </div>
+               </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contacts" class="contact">
+        <h5>Get in Touch</h5>
+        <p>Lets discuss how to bring your ideas to life</p>
+      <div class="form-icons">
+          <form action="">
+              <span>Send a message</span>
+              <input type="text" placeholder="Enter Name">
+              <input type="email" placeholder="Enter Email">
+              <textarea name="" id="" placeholder="Your message...">
+              </textarea>
+              <button>Submit</button>
+          </form>
+          <div class="icons">
+              <span>Follow me</span>
+              <div class="icon-1">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+              </div>
+              <div class="icon-1">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <span>Twitter</span>
+              </div>
+              <div class="icon-1">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+     <footer>
+        <div class="address">
+            <div class="navigate">
+                <span class="head">Navigation</span>
+                <span>Home</span>
+                <span>About</span>
+                <span>Skills</span>
+                <span>Contact</span>
+            </div>
+            <div class="navigate">
+                <span class="head">Socials</span>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="navigate">
+                <span class="head">Get in touch</span>
+                <span>No 4 Agbani Road Enugu</span>
+                <span>franklinokeke2016@gmail.com</span>
+                <span>+234 8103919717</span>
+            </div>
+        </div>
+          <span class="foot">&copy; 2026 Franklin Okeke All rights-reserved</span>
+     </footer>
     
 </body>
 </html>

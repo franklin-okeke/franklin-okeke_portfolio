@@ -5,8 +5,8 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #f5f7fa;
-    font-family: poppins;
+    /* background-color: #f5f7fa; */
+    /* font-family: poppins; */
 }
 
 header{
@@ -20,11 +20,16 @@ header{
     left: 0;
     transition: all ease-in-out 2s;
     z-index: 10;
-    background-color: #f5f7fa;
+    background-color: blue;
+    color: white;
+    height: 2.3rem;
+}
+header .nav-side nav a{
+   color: white;
 }
 header nav a:hover{
    text-decoration: underline;
-   text-decoration-color: blue;
+   text-decoration-color: orange;
 }
 
 header .logo{
@@ -78,7 +83,7 @@ header .hamburger .fa-solid.fa-bars{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 1.3rem;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .hero img{
@@ -98,8 +103,8 @@ header .hamburger .fa-solid.fa-bars{
 
  .profile button{
     border: 1px solid gray;
-    color: black;
-    background-color: #f5f7fa;
+    color: white;
+    background-color: blue;
     padding: 1rem 2rem;
     border-radius: 4rem;
     cursor: pointer;
@@ -126,4 +131,319 @@ header .hamburger .fa-solid.fa-bars{
    .profile button{
     width: 20%;
    } 
+ }
+
+
+ /* about me style */
+ .about{
+    width: 100%;
+    min-height: 100vh;
+ }
+ .about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.3rem;
+    gap: 1.4rem;
+ }
+
+ .about h2{
+    text-align: center;
+ }
+ .about-me img{
+    width: 16rem;
+    margin-top: 4rem;
+    object-fit: cover;
+ }
+ .about-details p{
+    margin: 1.2rem 0;
+ }
+
+ @media (min-width: 768px){
+    .about-me{
+        flex-direction: row-reverse;
+        padding: 2rem 5rem;
+        padding-top: 6rem;
+    }
+    .about-me img{
+    width: 25%;
+    margin-right: 3rem;
+    margin-top: -8rem;
+   }
+   .about-details p{
+    width: 70%;
+   }
+ }
+
+
+ /* skills section design */
+ .skills{
+    width: 100%;
+ }
+
+ .skills h3{
+    text-align: center;
+    margin-bottom: 1.4rem;
+ }
+
+ .card-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1.3rem;
+    gap: 2rem;
+    padding: 0 3rem;
+ }
+
+ .card-container .card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 2rem 2rem;
+    transition: all ease-in;
+ }
+ .card-container .card span{
+    font-size: 1.3rem;
+    color: black;
+ }
+ .card-container .card:hover{
+    transform: scale(1);
+ }
+
+ @media (min-width: 768px){
+    .card-container{
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 5rem;
+ }
+ .skills h3{
+    margin: 2rem 0;
+ }
+ .card-container .card{
+    margin: 2rem 0;
+ }
+ }
+
+
+
+ /* project section design */
+ .projects h4{
+     text-align: center;
+     margin: 2rem 0;
+     font-size: 1.3rem;
+ }
+ .projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1.3rem;
+}
+
+/* Card */
+.project {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.project:hover {
+  transform: translateY(-6px);
+}
+
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.github {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.github a {
+  color: black;
+}
+
+/* Content */
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.category {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #6366f1; /* nice indigo */
+}
+
+.stack {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+/* Text */
+.content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px){
+   .projects-container{
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   .project {
+   width: 20rem;
+}
+ .projects-container {
+  padding: 2rem 5rem;
+  gap: 4rem;
+}
+
+}
+
+
+/* Contact section design */
+.contact{
+   width: 100%;
+   padding: 2rem 1.3rem;
+}
+
+.contact h5, .contact p{
+   text-align: center;
+}
+.form-icons{
+   display: flex;
+   flex-direction: column;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   padding: 2rem;
+   margin: 2rem 0;
+   border-radius: 1.4rem;
+}
+form span{
+   color: blue;
+   font-weight: 500;
+}
+
+
+form input{
+   width: 100%;
+   outline: none;
+   border: 2px solid gray;
+   padding: .3rem;
+}
+
+form textarea{
+   width: 100%;
+   height: 4rem;
+}
+
+form button{
+   outline: none;
+   border: none;
+   background-color: blue;
+   color: white;
+   padding: .5rem;
+   border-radius: 7px;
+}
+
+@media (min-width: 768px){
+   form{
+      width: 50%;
+   }
+   .form-icons{
+   flex-direction: row;
+   align-items: center;
+   gap: 3rem;
+  }
+
+  .contact{
+   padding: 2rem 5rem;
+  }
+  .contact h5, .contact p{
+   font-size: 1.4rem;;
+}
+.form-icons .icons{
+   font-size: 1.3rem;
+}
+}
+
+/* footer section */
+footer{
+  padding: 2rem 1.3rem;
+  border-bottom: 2px solid black;
+  background-color: gray;
+  color: white;
+}
+.address{
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+}
+
+.navigate{
+   display: flex;
+   flex-direction: column; 
+   gap: 1.4rem;
+}
+
+.navigate .head{
+   color: orange;
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+ .foot{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top: 2px solid gray;
+   padding-top: 1rem;
+  }
+ 
+
+ @media (min-width: 768px){
+   footer{
+      padding: 2rem 5rem;
+   }
+   .address{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+  }
+  .foot{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top: 2px solid gray;
+   padding-top: 1rem;
+  }
  }
